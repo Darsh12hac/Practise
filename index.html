@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background: rgb(0, 0, 0) ;
+    background-size: cover;
+}
+nav{
+    width: 100%;
+    height: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 80px;
+}
+.logo{
+    border: 3px solid #d4ee52;
+    color: #d4ee52;
+    border-radius: 8px ;
+    font-size: 2.5em;
+    padding: 0 10px;
+}
+.menu a{
+    text-decoration: none;
+    color: rgb(240, 240, 240);
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+.menu a:first-child{
+    color: #d4ee52;
+}
+.menu a:hover{
+    color:#d4ee52;
+}
+.search label{
+    position: relative;
+}
+.search label input{
+    width: 70%;
+    padding:5px;
+    outline: none;
+    border: none;
+    border-radius: 8px 0 0 8px ;
+}
+
+.search label button{
+    position: absolute;
+    padding: 5px;
+    outline: none;
+    border: none;
+    background: #d4ee52;
+    color: white;
+    border-radius:  0 8px  8px 0 ;
+}
+.search label button:hover{
+    background: black;
+}
+
+.icons{
+    width: 100%;
+    height: 60%;
+    position: relative;
+}
+
+.icons img{
+    position: absolute;
+    animation: animate 3s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+#a{left: 15%;}
+#b{right: 5%;}
+#c{ left: 15%; bottom: 0;}
+#d{ right: 5%;  bottom: 0;}
+
+.htext{
+    position: absolute;
+    left: 5%;
+    top: 40%;
+    max-width: 600px;
+}
+.htext h3{
+    color: white;
+    font-family: monospace;
+    font-size: 30px;
+}
+span{
+    color: #ee5253;
+    font-size: 2em;
+}
+.htext h1{
+    font-family: cursive;
+    font-size: 3em;
+    margin: 15px 0;
+    color: white;
+
+
+}
+
+.htext p{
+    color: grey;
+    font-size: 20px;
+    font-family: monospace;
+    line-height: 2rem;
+}
+.htext a{
+    text-decoration: none;
+    color: rgb(5, 4, 4);
+    background:#d4ee52;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Dev.</div>
+        <div class="menu">
+          <a href="#">Home</a>
+          <a href="#">Service</a>
+          <a href="#">About me</a>
+          <a href="#">Conatct</a>
+        </div>
+        <div class="search">
+          <label>
+            <input type="text" name="" placeholder="Search.." />
+            <button>Search</button>
+          </label>
+        </div>
+      </nav>
+    
+      <div class="icons">
+        <img src="img/icon1.png" alt="" id="a" />
+        <img src="img/icon2.png" alt="" id="b" />
+        <img src="img/icon3.png" alt="" id="c" />
+        <img src="img/icon6.png" alt="" id="d" />
+      </div>
+
+      <div class="htext">
+        <h3>Hi, I am <span> Shawn de....</span></h3>
+        <h1>DEVELOPER</h1>
+        <p>
+          I love to work in App Designing. And i always try my best to make good
+          looking and user friendly app interfaces....
+        </p>
+        <br>
+        <a href="#">Hire Me</a>
+      </div>
+    </header>
+  </body>
+</html>
